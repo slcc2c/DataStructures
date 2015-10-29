@@ -64,13 +64,24 @@ int main()
 
 	}
 	if (choice == 3) {
-		cout << "What kind of triangle? \n" << "1-Right | 2-Equilateral";
-		int kind;
-		cin >> kind;
+		//getting triangles parameters
 
-		cout << "Height?";
+		cout << "Height? ";
 		int height;
 		cin >> height;
+
+		//creating right triangle
+
+			cout << "*\n";
+			string last(height, '*');
+			//height minus two because the last line has two more * than the second to last
+			for (int i = 0; i != (height - 2); i++) {
+				string blanks(i, ' ');
+				cout << "*" << blanks << "*" << endl;
+			}
+			cout << last << endl;
+			
+		
 	}
 	return 0;
 }
