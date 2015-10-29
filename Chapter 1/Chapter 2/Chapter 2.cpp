@@ -18,17 +18,19 @@ int main()
 		int length;
 		cin >> length;
 		string full(length, '*');
-		string foo(length - 2, ' ');
+		string foo((length - 2), ' ');
 		string empty = "*" + foo + "*";
-
-		for (int i = 0; i != length; i++) {
-			if (i = 0) {
-				cout << full;
+		cout << empty << " " << full << " " << length << endl;
+		for (int i = 0; i != length; ++i) {
+			//cout << i << endl;
+			if (i == 0) {
+				cout << full << endl;
 			}
 			else {
-				cout << empty;
+				cout << empty << endl;
 			}
 		}
+		cout << full << endl;
 		
 	}
 	if (choice == 2) {
