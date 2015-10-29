@@ -14,14 +14,17 @@ int main()
 	cin >> choice;
 	//cout << choice << endl;
 	if (choice == 1) {
-		cout << "What is the length of your square? ";
-		int length;
-		cin >> length;
-		string full(length, '*');
-		string foo((length - 2), ' ');
+		//getting square's parameters 
+		cout << "What is the height of your square? ";
+		int height;
+		cin >> height;
+
+		//creating the square
+		string full(height, '*');
+		string foo((height - 2), ' ');
 		string empty = "*" + foo + "*";
-		cout << empty << " " << full << " " << length << endl;
-		for (int i = 0; i != length; ++i) {
+		//cout << empty << " " << full << " " << height << endl;
+		for (int i = 0; i != height; ++i) {
 			//cout << i << endl;
 			if (i == 0) {
 				cout << full << endl;
@@ -34,12 +37,30 @@ int main()
 		
 	}
 	if (choice == 2) {
-		cout << "What is the length of your rectangle? ";
-		int length;
-		cin >> length;
+		//getting rectangle's parameters
+		cout << "What is the height of your rectangle? ";
+		int height;
+		cin >> height;
 		cout << "What is the width of your Rectangle? ";
 		int width;
 		cin >> width;
+
+		//creating the rectangle
+		string full(width, '*');
+		string foo((width - 2), ' ');
+		string empty = "*" + foo + "*";
+		//cout << empty << " " << full << " " << height << endl;
+		for (int i = 0; i != height; ++i) {
+			//cout << i << endl;
+			if (i == 0) {
+				cout << full << endl;
+			}
+			else {
+				cout << empty << endl;
+			}
+		}
+		cout << full << endl;
+		 
 
 	}
 	if (choice == 3) {
