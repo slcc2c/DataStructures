@@ -2,10 +2,64 @@
 #include "stdafx.h"
 #include <iostream>
 #include <string>
-
-//Exercise 5
 using std::cin; using std::endl;
 using std::cout; using std::string;
+/*exercise 9
+int main() {
+	//take in input from user
+	cout << "Please input two numbers, seperated by a space... ";
+	int x, y;
+	cin >> x >> y;
+	cout << "The larger of these numbers is... ";
+	if (x - y > 0) {
+		cout << x;
+	}
+	if (y - x > 0) {
+		cout << y;
+	}
+	else {
+		cout << "N/A, these numbers are equal";
+	}
+	cout << endl;
+	return 0;
+
+}
+*/
+/*exercise 8
+int main() {
+	//ask user for a range
+	cout << "Min? ";
+	int min;
+	cin >> min;
+	cout << "Max? ";
+	int max;
+	cin >> max;
+
+	//do the math prod starts at Identity so as to take on the value of min, this fullfills the loop invariant
+	//that at each step i prod = product of numbers [min,min+i)
+	int prod = 1;
+	for (int i = min; i != max; i++) {
+		prod *= i;
+		cout << prod << endl;
+	}
+}
+
+
+/*Exercise 6/7
+using std::cin; using std::endl;
+using std::cout; using std::string;
+int main()
+{
+	int i = 11;
+	while (i > -5) {
+		i -= 1;
+		cout << i << endl;
+	}
+
+	return 0;
+}
+*/
+/*Exercise 5
 int main()
 {
 	cout << "Welcome to *Draw!" << endl;
@@ -85,10 +139,9 @@ int main()
 	}
 	return 0;
 }
+*/
 /*Exercise 2/3/4
 // say what standard-library names we use
-using std::cin; using std::endl;
-using std::cout; using std::string;
 int main()
 {
 	//ask for the person's name  
@@ -157,8 +210,6 @@ int main()
 
 /*exercise 1
 // say what standard-library names we use
-using std::cin; using std::endl;
-using std::cout; using std::string;
 int main()
 {
 	//ask for the person's name  
@@ -204,8 +255,6 @@ int main()
 
 /*exercise 0
 // say what standard-library names we use
-using std::cin; using std::endl;
-using std::cout; using std::string;
 int main()
 {
 	//ask for the person's name  
