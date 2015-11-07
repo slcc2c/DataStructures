@@ -138,7 +138,7 @@ int main()
 	   << " 75%: " << third
 	   << " max: " << max << endl;
    */
-
+	/*
    //exercise 3/4
 
    //create container for vector size
@@ -181,7 +181,32 @@ int main()
 	}
 	//output for exercise 4
 	cout << "smallest: " << sht << " largest: " << lng;
-	//*/
+	*/
+	
+	//exercise 5
+	//create container for vector size
+	typedef vector<int>::size_type vec_sz;
+	vec_sz hw_limit = 5;
+	//create container for input 
+	vector<string> names;
+	vector<int> grades;
+
+	//take in input 
+	//invariant: after i steps names contains the i names so far
+	//and grades contains i grades such that grades[i] is the grade of
+	//names[i]
+	cout << "what is the students name? " << endl;
+	string name;
+	while (cin >> name) {
+		int sum = 0;
+		int x = 0;
+		//ask for hw_limit number of grades
+		//invariant: sum contains the total of the i grades so far
+		for (int i = 0; i++; i < hw_limit) {
+			cin >> x;
+			sum += x;
+		}
+	}
 
 	return 0;
 	
