@@ -1,0 +1,15 @@
+﻿Build started 11/20/2015 1:33:28 PM.
+     1>Project "G:\Users\Spencer\Documents\GitHubVisualStudio\DataStructures\Chapter 1\Chapter 4\Chapter 4.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\Chapter 4.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "Chapter 4.cpp"
+         Chapter 4.cpp
+     1>g:\users\spencer\documents\githubvisualstudio\datastructures\chapter 1\chapter 4\chapter 4.cpp(5): warning C4627: '#include <algorithm>': skipped when looking for precompiled header use
+         g:\users\spencer\documents\githubvisualstudio\datastructures\chapter 1\chapter 4\chapter 4.cpp(5): note: Add directive to 'stdafx.h' or rebuild precompiled header
+     1>g:\users\spencer\documents\githubvisualstudio\datastructures\chapter 1\chapter 4\chapter 4.cpp(6): warning C4627: '#include <iomanip>': skipped when looking for precompiled header use
+         g:\users\spencer\documents\githubvisualstudio\datastructures\chapter 1\chapter 4\chapter 4.cpp(6): note: Add directive to 'stdafx.h' or rebuild precompiled header
+     1>g:\users\spencer\documents\githubvisualstudio\datastructures\chapter 1\chapter 4\chapter 4.cpp(56): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+     1>Done Building Project "G:\Users\Spencer\Documents\GitHubVisualStudio\DataStructures\Chapter 1\Chapter 4\Chapter 4.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.21

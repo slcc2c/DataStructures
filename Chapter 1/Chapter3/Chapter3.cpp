@@ -198,14 +198,25 @@ int main()
 	cout << "what is the students name? " << endl;
 	string name;
 	while (cin >> name) {
+		names.push_back(name);
 		int sum = 0;
 		int x = 0;
 		//ask for hw_limit number of grades
 		//invariant: sum contains the total of the i grades so far
-		for (int i = 0; i++; i < hw_limit) {
+		cout << "please input " << hw_limit << " grades:\n";
+		for (vec_sz i = 0; i < hw_limit; i++) {
 			cin >> x;
 			sum += x;
 		}
+		int mean = sum / hw_limit;
+		grades.push_back(mean);
+		cout << "Please enter a new name or press ctrl-z:\n";
+	}
+
+	//output grades and names
+	for (vec_sz i = 0; i < grades.size(); i++)
+	{
+		cout << names[i] << " : " << grades[i] << endl;
 	}
 
 	return 0;
